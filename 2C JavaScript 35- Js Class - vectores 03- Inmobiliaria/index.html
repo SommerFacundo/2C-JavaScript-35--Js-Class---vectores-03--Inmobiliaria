@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="nombreProp" placeholder="Nombre Propietario">
+       <label for="">Transaccion</label> <select id="tipoTrans">
+            <option value="Venta">Venta</option>
+            <option value="Alquiler">Alquiler</option>
+        
+        </select>
+        <label for="">Tipo Propiedad</label> <select id="tipoPropiedad">
+            <option value="Casa">Casa</option>
+            <option value="Departamento">Departamento</option>
+            <option value="Quintas">Quintas</option>
+
+        
+        </select>
+        <input type="number" placeholder="Costo" id="costo">
+        <br>
+        <label for="">Cantidad de habitaciones </label><input type="number" id="cantHabitacion" style="width: 3rem;" min="0">
+        <br>
+        <label for="">Cantidad de baños </label><input type="number" id="cantBanos" style="width: 3rem;" min="0">
+        <br>
+        <label for="">Superficie terreno </label><input type="number" id="supTerreno" style="width: 3rem;" min="0">
+        <br>
+        <label for="">Superficie cubierta</label><input type="number" id="supCubierta" style="width: 3rem;" min="0">
+        <button id="btnEnviar">Enviar</button>
+        <button id="btnMostrar">Mostrar</button>
+        <button id="btnListar">Mostrar mas de tres baños</button>
+    </form>
+    <div id="resultados">
+
+    </div>
+
+    <div class="resultadosTabla">
+        <table>
+            <tbody id="tablaCasa">
+                <tr>
+                    <th>Nombre Titular</th>
+                    <th>Tipo Transaccion</th>
+                    <th>Costo</th>
+                    <th>Cant Habitaciones</th>
+                    <th>Baños</th>
+                    <th>Superficie terreno</th>
+                    <th>Superficie cubierta</th>
+
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
